@@ -26,7 +26,20 @@ const chunk = function (array, size) {
     newArr.push(arr);
 
     return newArr;
-}
-
+};
 //console.log(_.chunk(['a', 'b', 'c', 'd', 'e'], 2));
 //console.log(chunk(['a', 'b', 'c', 'd', 'e'], 2));
+
+const compact = function (array) {
+    let arr = [];
+    array.forEach(e => {
+       if (e !== 0 && e !== '' && e !== ' ' && e !== undefined && e !== NaN && e !== NaN && e !== false) {
+           arr.push(e);
+       }
+    });
+
+    return arr;
+};
+
+console.log(_.compact([0, 1, false, 2, '', 3]));
+console.log(compact([0, 1, false, 2, '', 3]));
