@@ -40,6 +40,14 @@ const compact = function (array) {
 
     return arr;
 };
+// console.log(_.compact([0, 1, false, 2, '', 3]));
+// console.log(compact([0, 1, false, 2, '', 3]));
 
-console.log(_.compact([0, 1, false, 2, '', 3]));
-console.log(compact([0, 1, false, 2, '', 3]));
+const concat = function (array) {
+    
+}
+
+var array = [1];
+var other = _.concat(array, 2, [3], [[4]]);
+console.log(other);
+
