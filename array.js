@@ -78,3 +78,8 @@ const difference = function (array, value) {
 // console.log(_.difference([2, 1,5], [2,3]));
 // console.log(difference([2, 1,5], [2,3]));
 
+const drop = (array, n = 1) => {
+    return array.slice(n);
+};
+
+// console.log( drop([1, 2, 3], 0) );
