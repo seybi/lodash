@@ -83,3 +83,13 @@ const drop = (array, n = 1) => {
 };
 
 // console.log( drop([1, 2, 3], 0) );
+
+const dropRight = (array, n = 1) => {
+    for (let i = 0; i < n; i++) {
+        array.pop();
+    };
+
+    return array;
+};
+
+// console.log(dropRight([1, 2, 3]));
