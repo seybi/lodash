@@ -63,3 +63,19 @@ const concat = function (...args) {
 
 // var other2 = concat(array, 2, [3, 4], [[4]], {});
 // console.log(other2);
+
+const difference = function (array, value) {
+    //let arr = array.slice();   
+    array.forEach((e, i) => {
+        value.forEach(el =>{
+            if (e === el) {
+                array.splice(i, 1);    
+            }
+        })
+    })
+    return array;
+};
+
+// console.log(_.difference([2, 1,5], [2,3]));
+// console.log(difference([2, 1,5], [2,3]));
+
