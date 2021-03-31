@@ -65,7 +65,6 @@ const concat = function (...args) {
 // console.log(other2);
 
 const difference = function (array, value) {
-    //let arr = array.slice();   
     array.forEach((e, i) => {
         value.forEach(el =>{
             if (e === el) {
